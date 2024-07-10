@@ -1,0 +1,32 @@
+.header {
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        font-size: 40px;
+        @media (max-width: 769px) {
+            font-size: 25px;
+        }
+    }
+    .navigate {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav {
+        padding: 10px 20px;
+        background-color: grey;
+        border-radius: 20px;
+        transition: all 0.4s ease;
+        &:hover {
+            background: blue;
+        }
+        &_active {
+            background: blue;
+        }
+    }
+}

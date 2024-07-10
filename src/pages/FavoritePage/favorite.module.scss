@@ -1,0 +1,13 @@
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    @media (max-width: 1044px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 769px) {
+        grid-template-columns: 1fr;
+    }
+}

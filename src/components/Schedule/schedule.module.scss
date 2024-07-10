@@ -1,0 +1,24 @@
+.btns {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    .btn {
+        button {
+            width: 70px;
+            padding: 8px 0;
+            background-color: grey;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        &:hover {
+            button {
+                background-color: blue;
+            }
+        }
+        &_active {
+            button {
+                background-color: blue;
+            }
+        }
+    }
+}
