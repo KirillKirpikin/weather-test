@@ -13,8 +13,10 @@ const Weather = ({ search }: { search: string }) => {
     const local = localStorage.getItem("citiesWeather");
 
     const handleAddToFavorite = () => {
-        if (data?.name && local) {
-            const citiesWeather = JSON.parse(local);
+        
+        if (data?.name) {
+            
+            const citiesWeather = JSON.parse(localStorage.getItem("citiesWeather") || "[]");
             const cityIndex = citiesWeather.indexOf(data.name.toLowerCase());
 
             if (cityIndex === -1) {
