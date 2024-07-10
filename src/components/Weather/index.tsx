@@ -9,9 +9,6 @@ import NotFound from "../NotFound";
 const Weather = ({ search }: { search: string }) => {
     const { data, isLoading, isSuccess } = useGetWeather(search);
     const [favorite, setFavorite] = useState<boolean>(false);
-
-    const local = localStorage.getItem("citiesWeather");
-
     const handleAddToFavorite = () => {
         
         if (data?.name) {
